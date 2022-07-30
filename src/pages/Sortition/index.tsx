@@ -21,6 +21,7 @@ const Sortition = () => {
   return (
     <Card>
       <section>
+        <h2>Quem vai tirar o papelzinho</h2>
         <form onSubmit={sortear}>
           <Select
             required
@@ -35,11 +36,10 @@ const Sortition = () => {
               <option key={participante}>{participante}</option>
             ))}
           </Select>
-          {amigoSecreto && (
-            <WarningMessage role="alert">{amigoSecreto}</WarningMessage>
-          )}
+          <p>Clique em sortear para ver quem é o seu amigo secreto!</p>
           <Button>Sortear</Button>
         </form>
+        {amigoSecreto && <WarningMessage role="alert">{amigoSecreto}</WarningMessage>}
         <Footer />
       </section>
     </Card>
