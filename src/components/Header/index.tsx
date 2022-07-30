@@ -1,6 +1,6 @@
 import { Container, Brand, Participant } from "./styles";
 
-const Cabecalho = () => {
+const Header = () => {
   return (
     <Container>
       <Brand 
@@ -15,4 +15,4 @@ const Cabecalho = () => {
   );
 };
 
-export default Cabecalho;
+export default Header;

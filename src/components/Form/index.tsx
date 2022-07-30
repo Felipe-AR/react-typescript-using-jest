@@ -3,7 +3,7 @@ import { useAdicionarParticipante } from "../../state/hook/useAdicionarParticipa
 import { useMensagemDeErro } from "../../state/hook/useMensagemDeErro"
 import { InputGroupButton, Input, Button, WarningMessage } from './styles'
 
-const Formulario = () => {
+const Form = () => {
 
     const [nome, setNome] = useState('')
 
@@ -35,4 +35,4 @@ const Formulario = () => {
     </form>)
 }
 
-export default Formulario
+export default Form
