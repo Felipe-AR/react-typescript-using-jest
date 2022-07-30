@@ -13,12 +13,12 @@ export const Container = styled('header')`
 `
 
 export const Brand = styled('div')`
-  background-image: url("/public/imagens/logo.png");
+  background-image: url("/imagens/logo.png");
   width: 351px;
   height: 117px;
 
   @media screen and (max-width: 800px) {
-    background-image: url("/public/imagens/logo-pequeno.png");
+    background-image: url("/imagens/logo-pequeno.png");
     width: 235px;
     height: 199px;
   }
