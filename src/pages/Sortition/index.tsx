@@ -3,7 +3,7 @@ import Card from "../../components/Card";
 import { useListaDeParticipantes } from "../../state/hook/useListaDeParticipantes";
 import { useResultadoSorteio } from "../../state/hook/useResultadoSorteio";
 import Footer from "./Footer";
-import { Button, Select, WarningMessage } from "./styles";
+import { Button, InformationMessage, Select, WarningMessage } from "./styles";
 
 const Sortition = () => {
   const [participanteAtual, setParticipanteAtual] = useState<string>("");
@@ -36,7 +36,7 @@ const Sortition = () => {
               <option key={participante}>{participante}</option>
             ))}
           </Select>
-          <p>Clique em sortear para ver quem é o seu amigo secreto!</p>
+          <InformationMessage>Clique em sortear para ver quem é o seu amigo secreto!</InformationMessage>
           <Button>Sortear</Button>
         </form>
         {amigoSecreto && <WarningMessage role="alert">{amigoSecreto}</WarningMessage>}

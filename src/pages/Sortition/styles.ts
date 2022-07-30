@@ -46,6 +46,12 @@ export const Select = styled('select')`
   }
 `
 
+export const InformationMessage = styled('p')`
+  font-size: 20px;
+  font-weight: 200;
+  margin: 32px 0;
+`
+
 export const WarningMessage = styled('p')`
   color: ${colors.bg.secondary.coral};
   font-size: 25px;
