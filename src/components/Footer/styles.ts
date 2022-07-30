@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "../../styles/colors";
 
 export const Container = styled('footer')`
   display: flex;
@@ -14,10 +15,10 @@ export const Button = styled('button')`
   width: 350px;
   height: 80px;
   font-size: 20px;
-  box-shadow: 2px 2px 0px 1px #000000;
+  box-shadow: 2px 2px 0px 1px ${colors.bg.secondary.black};
   border-radius: 45px;
-  background-color: #FE652B;
-  color: #FFF;
+  background-color: ${colors.bg.secondary.coral};
+  color: ${colors.text.primary};
   cursor: pointer;
 
   &:disabled {
@@ -26,7 +27,7 @@ export const Button = styled('button')`
   }
 
   &:hover {
-    background: #4B69FD;
+    background: ${colors.bg.primary};
   }
 
   @media screen and (max-width: 800px) {

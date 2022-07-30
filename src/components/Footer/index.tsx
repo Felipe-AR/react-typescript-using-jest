@@ -1,20 +1,21 @@
 import { useNavigate } from "react-router-dom";
 import { useListaDeParticipantes } from "../../state/hook/useListaDeParticipantes";
+import { useSorteador } from "../../state/hook/useSorteador";
 import { Container, Image, Button } from "./styles";
 
-const Rodape = () => {
-  const participantes = useListaDeParticipantes();
-
-  const navegarPara = useNavigate();
+const Footer = () => {
+  const participantes = useListaDeParticipantes()
+  const sortear = useSorteador()
+  const navegarPara = useNavigate()
 
   const iniciar = () => {
-    navegarPara("/sorteio");
+    sortear()
+    navegarPara("/sorteio")
   };
 
   return (
-    <Container className="rodape-configuracoes">
+    <Container>
       <Button
-        className="botao"
         disabled={participantes.length < 3}
         onClick={iniciar}
       >
@@ -25,4 +26,4 @@ const Rodape = () => {
   );
 };
 
-export default Rodape;
+export default Footer;
