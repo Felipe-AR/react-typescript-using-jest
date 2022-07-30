@@ -16,6 +16,9 @@ const Sortition = () => {
     evento.preventDefault();
     const amigoSecretoDoParticipante = resultado.get(participanteAtual);
     if (amigoSecretoDoParticipante) setAmigoSecreto(amigoSecretoDoParticipante);
+    setTimeout(() => {
+      setAmigoSecreto('')
+    }, 5000)
   };
 
   return (
