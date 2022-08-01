@@ -3,7 +3,7 @@
 exports[`a pagina de configuracao deve ser renderizada corretamente 1`] = `
 <div>
   <div
-    class="sc-bczRLJ eYAlEs"
+    class="sc-bczRLJ jAiKgg"
   >
     <section>
       <h2>
@@ -14,13 +14,13 @@ exports[`a pagina de configuracao deve ser renderizada corretamente 1`] = `
           class="sc-gsnTZi ioSZGc"
         >
           <input
-            class="sc-dkzDqf gHLDox"
+            class="sc-dkzDqf rjQpV"
             placeholder="Insira os nomes dos participantes"
             type="text"
             value=""
           />
           <button
-            class="sc-hKMtZM dOWzhi"
+            class="sc-hKMtZM gPbEiq"
             disabled=""
           >
             Adicionar
@@ -33,7 +33,7 @@ exports[`a pagina de configuracao deve ser renderizada corretamente 1`] = `
         class="sc-jSMfEi gfNvPW"
       >
         <button
-          class="sc-gKXOVf bUxDgU"
+          class="sc-gKXOVf Sfcje"
           disabled=""
         >
           Iniciar brincadeira
